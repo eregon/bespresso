@@ -1,0 +1,14 @@
+%table
+  %thead
+    %tr
+      %th Drinker
+      %th Espressos
+      %th Lungos
+      %th Amount due
+  %tbody
+    - @drinkers.each do |drinker|
+      %tr{:id => "drinker-#{drinker.id}"}
+        %td= drinker.name
+        %td= drinker.espressos
+        %td= drinker.lungos
+        %td= drinker.amount_due
