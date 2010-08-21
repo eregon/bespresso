@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0.beta4'
+gem 'rails', '>=3.0.0.rc'
 gem 'sqlite3-ruby', :require => 'sqlite3'
-gem "database_cleaner", :git => "git://github.com/bmabey/database_cleaner.git",      :branch => "master"
+gem "database_cleaner"
 
 group :development, :test do
   gem "rspec-rails", ">= 2.0.0.beta.17"
@@ -12,7 +12,7 @@ group :test do
   gem "capybara"
   gem "cucumber"
   gem "cucumber-rails"
-  gem "factory_girl", :git => "git://github.com/szimek/factory_girl.git", :branch => "rails3"
+  gem "factory_girl"
   gem "faker"
   gem "launchy" # used to "show me the page"
   gem "ZenTest"
